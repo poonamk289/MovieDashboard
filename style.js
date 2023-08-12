@@ -64,6 +64,7 @@ async function getmovie(SEARCH_TERM,api_key){
     loader.classList.add("close");
     console.log(result.Search);
     const movieArr= result.Search;
+         maincontent.innerHTML="";
     movieArr.forEach((value)=>{
         console.log(value);
     

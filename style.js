@@ -64,7 +64,8 @@ async function getmovie(SEARCH_TERM,api_key){
     loader.classList.add("close");
     console.log(result.Search);
     const movieArr= result.Search;
-         maincontent.innerHTML="";
+    maincontent.innerHTML="";
+
     movieArr.forEach((value)=>{
         console.log(value);
     
@@ -74,7 +75,7 @@ async function getmovie(SEARCH_TERM,api_key){
     card.innerHTML=`
     
     <div class="poster">
-         <img src="${value.Poster}"alt="hello">
+         <img src="${value.Poster}"alt="hello" style="width:100%">
     </div>
           <div class="discription">
                 
